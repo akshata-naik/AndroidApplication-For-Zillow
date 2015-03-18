@@ -1,0 +1,66 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.myfirstapp1.Tab2Activity" >
+
+    <ImageSwitcher
+        android:id="@+id/charts"
+        android:layout_width="300dp"
+        android:layout_height="200dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="75dp" >
+    </ImageSwitcher>
+
+    <TextSwitcher
+        android:id="@+id/texts"
+        android:layout_width="340dp"
+        android:layout_height="50dp"
+        android:layout_alignLeft="@+id/charts" >
+
+    </TextSwitcher>
+
+    <Button
+        android:id="@+id/prev"
+        android:layout_width="95dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/charts"
+        android:layout_below="@+id/charts"
+        android:layout_marginLeft="29dp"
+        android:layout_marginTop="25dp"
+        android:text="Previous" />
+
+    <Button
+        android:id="@+id/next"
+        android:layout_width="95dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/prev"
+        android:layout_alignRight="@+id/charts"
+        android:layout_marginRight="28dp"
+        android:text="Next" />
+
+    <TextView
+        android:id="@+id/addr"
+        android:layout_width="300dp"
+        android:layout_height="30dp"
+        android:layout_below="@+id/texts"
+        android:layout_centerHorizontal="true"
+        android:gravity="center_horizontal"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/zillow_footer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/prev"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:clickable="true"
+        android:gravity="center_horizontal"
+        android:linksClickable="true"
+        android:text=""
+        android:textAlignment="center" />
+
+</RelativeLayout>

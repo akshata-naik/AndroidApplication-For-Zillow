@@ -1,0 +1,581 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.myfirstapp1.Tab1Activity" >
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="380dp" >
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:color/black"
+            android:paddingLeft="1dp"
+            android:paddingRight="1dp"
+            android:shrinkColumns="0"
+            android:stretchColumns="1"
+            android:textColor="#000000" >
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="1dp"
+                android:background="#FFF" >
+
+                <TextView
+                    android:id="@+id/row1"
+                    android:layout_width="250dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@android:color/white"
+                    android:paddingLeft="5dp"
+                    android:text="See more details on Zillow:"
+                    android:textColor="#000000" />
+
+                <Button
+                    android:id="@+id/fb"
+                    android:layout_width="60dp"
+                    android:layout_height="35dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginRight="3dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/fd_share"
+                    android:focusableInTouchMode="true"
+                    android:linksClickable="true"
+                    android:paddingBottom="5dp"
+                    android:paddingTop="5dp"
+                    android:shadowColor="#EEEDFF"
+                    android:text="" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="1dp" >
+
+                <TextView
+                    android:id="@+id/address"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@android:color/white"
+                    android:clickable="true"
+                    android:paddingLeft="5dp"
+                    android:paddingTop="3dp"
+                    android:paddingBottom="3dp"
+                    android:text=""
+                    android:textColor="#564AF6" />
+
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="1dp" >
+
+                <TextView
+                    android:id="@+id/prop"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="#EEEDFF"
+                    android:paddingBottom="3dp"
+                    android:paddingLeft="5dp"
+                    android:paddingTop="3dp"
+                    android:text="Property Type"
+                    android:textColor="#000000" />
+
+                <TextView
+                    android:id="@+id/proptyV"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="#EEEDFF"
+                    android:gravity="right"
+                    android:paddingRight="5dp"
+                    android:text=""
+                    android:textColor="#000000" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="1dp" >
+
+                <TextView
+                    android:id="@+id/year"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@android:color/white"
+                    android:paddingBottom="3dp"
+                    android:paddingLeft="5dp"
+                    android:paddingTop="3dp"
+                    android:text="Year Built"
+                    android:textColor="#000000" />
+
+                <TextView
+                    android:id="@+id/built"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@android:color/white"
+                    android:gravity="right"
+                    android:paddingRight="5dp"
+                    android:text=""
+                    android:textColor="#000000" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="1dp" >
+
+                <TextView
+                    android:id="@+id/lot"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="#EEEDFF"
+                    android:paddingBottom="3dp"
+                    android:paddingLeft="5dp"
+                    android:paddingTop="3dp"
+                    android:text="Lot Size"
+                    android:textColor="#000000" />
+
+                <TextView
+                    android:id="@+id/size"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="#EEEDFF"
+                    android:gravity="right"
+                    android:paddingRight="5dp"
+                    android:text=""
+                    android:textColor="#000000" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="1dp" >
+
+                <TextView
+                    android:id="@+id/fin"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@android:color/white"
+                    android:paddingBottom="3dp"
+                    android:paddingLeft="5dp"
+                    android:paddingTop="3dp"
+                    android:text="Finished Area"
+                    android:textColor="#000000" />
+
+                <TextView
+                    android:id="@+id/area"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@android:color/white"
+                    android:gravity="right"
+                    android:paddingRight="5dp"
+                    android:text=""
+                    android:textColor="#000000" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="1dp" >
+
+                <TextView
+                    android:id="@+id/bath"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="#EEEDFF"
+                    android:paddingBottom="3dp"
+                    android:paddingLeft="5dp"
+                    android:paddingTop="3dp"
+                    android:text="Bathrooms"
+                    android:textColor="#000000" />
+
+                <TextView
+                    android:id="@+id/rooms"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="#EEEDFF"
+                    android:gravity="right"
+                    android:paddingRight="5dp"
+                    android:text=""
+                    android:textColor="#000000" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="1dp" >
+
+                <TextView
+                    android:id="@+id/bed"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@android:color/white"
+                    android:paddingBottom="3dp"
+                    android:paddingLeft="5dp"
+                    android:paddingTop="3dp"
+                    android:text="Bedrooms"
+                    android:textColor="#000000" />
+
+                <TextView
+                    android:id="@+id/brooms"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@android:color/white"
+                    android:gravity="right"
+                    android:paddingRight="5dp"
+                    android:text=""
+                    android:textColor="#000000" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="1dp" >
+
+                <TextView
+                    android:id="@+id/Tax"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="#EEEDFF"
+                    android:paddingBottom="3dp"
+                    android:paddingLeft="5dp"
+                    android:paddingTop="3dp"
+                    android:text="Tax Assessment Year"
+                    android:textColor="#000000" />
+
+                <TextView
+                    android:id="@+id/Tyear"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="#EEEDFF"
+                    android:gravity="right"
+                    android:paddingRight="5dp"
+                    android:text=""
+                    android:textColor="#000000" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="1dp" >
+
+                <TextView
+                    android:id="@+id/tax"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@android:color/white"
+                    android:paddingBottom="3dp"
+                    android:paddingLeft="5dp"
+                    android:paddingTop="3dp"
+                    android:text="Tax assessment"
+                    android:textColor="#000000" />
+
+                <TextView
+                    android:id="@+id/ass"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@android:color/white"
+                    android:gravity="right"
+                    android:paddingRight="5dp"
+                    android:text=""
+                    android:textColor="#000000" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="1dp" >
+
+                <TextView
+                    android:id="@+id/sold"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="#EEEDFF"
+                    android:paddingBottom="3dp"
+                    android:paddingLeft="5dp"
+                    android:paddingTop="3dp"
+                    android:text="Last Sold Price"
+                    android:textColor="#000000" />
+
+                <TextView
+                    android:id="@+id/price"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="#EEEDFF"
+                    android:gravity="right"
+                    android:paddingRight="5dp"
+                    android:text=""
+                    android:textColor="#000000" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="1dp" >
+
+                <TextView
+                    android:id="@+id/lsold"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@android:color/white"
+                    android:paddingBottom="3dp"
+                    android:paddingLeft="5dp"
+                    android:paddingTop="3dp"
+                    android:text="Last Sold Date"
+                    android:textColor="#000000" />
+
+                <TextView
+                    android:id="@+id/date"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@android:color/white"
+                    android:gravity="right"
+                    android:paddingRight="5dp"
+                    android:text=""
+                    android:textColor="#000000" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="1dp" >
+
+                <TextView
+                    android:id="@+id/Zest"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="#EEEDFF"
+                    android:paddingBottom="3dp"
+                    android:paddingLeft="5dp"
+                    android:paddingTop="3dp"
+                    android:text="Zestimate ®Property Estimate as of"
+                    android:textColor="#000000" />
+
+                <TextView
+                    android:id="@+id/Zamt"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="#EEEDFF"
+                    android:gravity="right"
+                    android:paddingRight="5dp"
+                    android:text=""
+                    android:textColor="#000000" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="1dp" >
+
+                <TextView
+                    android:id="@+id/overall"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@android:color/white"
+                    android:paddingBottom="3dp"
+                    android:paddingLeft="5dp"
+                    android:paddingTop="3dp"
+                    android:text="30 Days Overall Change"
+                    android:textColor="#000000" 
+                    />
+
+                <TextView
+                    android:id="@+id/zchange"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@android:color/white"
+                    android:gravity="right"
+                    android:paddingRight="5dp"
+                    android:text=""
+                    android:textColor="#000000"/>
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="1dp" >
+
+                <TextView
+                    android:id="@+id/Alltime"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="#EEEDFF"
+                    android:paddingBottom="3dp"
+                    android:paddingLeft="5dp"
+                    android:paddingTop="3dp"
+                    android:text="All Time Property Change"
+                    android:textColor="#000000" />
+
+                <TextView
+                    android:id="@+id/propchang"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="#EEEDFF"
+                    android:gravity="right"
+                    android:paddingRight="5dp"
+                    android:text=""
+                    android:textColor="#000000" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="1dp" >
+
+                <TextView
+                    android:id="@+id/Rzestim"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@android:color/white"
+                    android:paddingBottom="3dp"
+                    android:paddingLeft="5dp"
+                    android:paddingTop="3dp"
+                    android:text="Rent Zestimate ®Valuation as of"
+                    android:textColor="#000000" 
+                    />
+
+                <TextView
+                    android:id="@+id/RzAmt"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@android:color/white"
+                    android:gravity="right"
+                    android:paddingRight="5dp"
+                    android:text=""
+                    android:textColor="#000000" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="1dp" >
+
+                <TextView
+                    android:id="@+id/Roverall"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="#EEEDFF"
+                    android:paddingBottom="3dp"
+                    android:textColor="#000000"
+                    android:paddingLeft="5dp"
+                    android:paddingTop="3dp"
+                    
+                    android:text="30 Days Rent Change" />
+
+                <TextView
+                    android:id="@+id/Rzchange"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="#EEEDFF"
+                    android:textColor="#000000"
+                    android:gravity="right"
+                    android:paddingRight="5dp"
+                    android:text="" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="1dp" >
+
+                <TextView
+                    android:id="@+id/AlltimeR"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@android:color/white"
+                    android:paddingBottom="3dp"
+                    android:paddingLeft="5dp"
+                    android:textColor="#000000"
+                    android:paddingTop="3dp"
+                    android:text="All Time Rent Change" />
+
+                <TextView
+                    android:id="@+id/Rchange"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@android:color/white"
+                    android:gravity="right"
+                    android:paddingRight="5dp"
+                    android:textColor="#000000"
+                    android:text="" />
+            </TableRow>
+        </TableLayout>
+    </ScrollView>
+
+    <TextView
+        android:id="@+id/zillow_footer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/scrollView1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        
+        android:clickable="true"
+        android:gravity="center_horizontal"
+        android:linksClickable="true"
+        android:text=""
+        android:textAlignment="center" />
+    
+   <LinearLayout 
+    android:id="@+id/fragment_place"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+        
+    </LinearLayout> 
+</RelativeLayout>
